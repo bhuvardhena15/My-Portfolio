@@ -103,7 +103,7 @@ img{
     color:#FFB400;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 #hero .container .left .decs{
@@ -279,13 +279,13 @@ img{
     box-shadow: 0px 0px 20px 0px #4789fc1f;
 }
 #testimonial .item:nth-child(2)::after{
-    transform: skew(350deg, 354deg);
+    transform: skew(0deg, 0deg);
     border-radius: 26px 67px 35px 67px;
     height: 100%;
 }
 #testimonial .item:nth-child(1)::after,
 #testimonial .item:nth-child(3)::after{
-    transform: skew(2deg, 9deg);
+    transform: skew(0deg, 0deg);
     height: 95%;
     border-radius: 52px 30px 59px 60px;
 }
@@ -310,23 +310,27 @@ img{
 #testimonial .testimonial-subheading {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: #FFB400;
+    color:#fff200;
 }
 #testimonial .icon{
     max-width: 25px;
     margin: 1.5rem auto;
-    color:#e5ff00;
+    color:#00e1ff;
     opacity: 0.5;
 }
 #testimonial .testimonial-desc{
-    color:#fff700;
+    color:#fff;
+    font-weight: bold;
 }
 /* stats style */
 #stats {
-    height: 100%;
-   
+    height: 90%;
+    margin-top: 0;
 
     
+}
+#stats .item p{
+    font-weight:500 ;
 }
 #stats .all-items{
     display: flex;
@@ -336,6 +340,7 @@ img{
 }
 #stats .all-items .item{
     padding: 2rem;
+    width: 100%; 
 
 }
 #stats .number {
@@ -354,13 +359,13 @@ img{
     background-color: #e5ff00;
 }
 #stats .all-items .item:nth-child(3){
-    background-color: #002fff;
+    background-color: #ff5500;
 }
 
 #projectsection  {
  /* // margin-top: 10%; */
  
- padding-bottom: 50%;
+ padding-bottom: 45%;
 
 }
 #projectsection .project{
@@ -461,7 +466,59 @@ img{
   opacity: .4;
   z-index: -1;
 }
- 
+
+#workflow {
+    height: 90%;
+    margin-top: 5px; 
+    
+}
+#workflow .container{
+    margin-top: 50px;
+    
+}
+
+#workflow .step{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; */
+   
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+#workflow .step .substep{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   
+}
+#workflow .step .substep{
+    padding: 2rem;
+    width: 100%; 
+
+}
+#workflow .workflow-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+#workflow .workflow-sub-heading1{
+    font-size: 1.5rem;
+
+  
+}
+#workflow  .step .workflow-sub-heading3 {
+    font-size: 2rem;
+    color: #e5ff00;
+    margin-top: 20px;
+    font-weight: 500;
+}
+#workflow  .step .workflow-sub-heading4 {
+    font-size: 2rem;
+    color:#e5ff00;
+    font-weight: 500;
+}
 /*Start of Footer section */
 /* #footersection {
    background-color: #e19f1e;
@@ -555,7 +612,7 @@ img{
 
 #footer footer .column-heading {
 	font-family: 'Montserrat';
-	font-size: 2rem;
+	font-size: 2rem; 
 	margin-bottom: 2rem;
 	text-transform: uppercase;
 	line-height: 1.5em;
@@ -645,13 +702,17 @@ img{
         margin-top: 2rem;
     }
     #services{
-        margin-top: 20px;
+        margin-top: 10px;
+        
+    }
+    #services .section-heading{
+       margin-bottom: -10px;
     }
     #testimonial .section-heading{
-        margin-top: 250px;
+        margin-top: 200px;
     }
     #projectsection{
-        margin-top: 20px;
+        margin-top: 50px;
     }
     #footer{
         position: relative;
@@ -665,6 +726,12 @@ img{
     #footer .container1{
         width: 100%;
     }
+    #workflow .container{
+        position: relative;
+        top: 1100px;
+        z-index: 5;
+    }
+   
     
     
     
@@ -675,6 +742,56 @@ img{
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
+
+	}
+	#footer footer .col-1,
+	#footer footer .col-2,
+	#footer footer .col-3,
+	#footer footer .col-4 {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	#footer footer .col-4 ul {
+		width: fit-content;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 320px) {
+    
+    #footer{
+        margin-top: 100px;
+
+    }
+	#footer footer {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+      
+
+	}
+	#footer footer .col-1,
+	#footer footer .col-2,
+	#footer footer .col-3,
+	#footer footer .col-4 {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	#footer footer .col-4 ul {
+		width: fit-content;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 375px) {
+    
+    #footer{
+        margin-top: 500px;
+
+    }
+	#footer footer {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+      
 
 	}
 	#footer footer .col-1,
@@ -776,6 +893,7 @@ img{
         margin-top: 350px;
     }
 }
+
 /* about */
 @media only screen and (max-width:768px){
     #about .wrapper{
