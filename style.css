@@ -444,7 +444,7 @@ img{
   font-size: 1.5rem;
     text-transform: capitalize;
     transition: .5s;
-    font-family:cursive;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #projectsection .project-item p a{
   text-decoration: none;
@@ -468,12 +468,12 @@ img{
 }
 
 #workflow {
-    height: 90%;
+    height: 100%;
     margin-top: 5px; 
     
 }
 #workflow .container{
-    margin-top: 50px;
+    margin-top: 10px;
     
 }
 
@@ -667,7 +667,7 @@ img{
     text-align: center;
     font-weight: 500;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     html{
         font-size: 9px;
     }
@@ -711,8 +711,13 @@ img{
     #testimonial .section-heading{
         margin-top: 200px;
     }
+    #testimonial{
+        margin-top: 150px;
+    }
+   
     #projectsection{
-        margin-top: 50px;
+        margin-top: 100px;
+        margin-bottom: -10px;
     }
     #footer{
         position: relative;
@@ -723,21 +728,31 @@ img{
         position: relative;
         top: 1300px;
     }
-    #footer .container1{
+    #footer {
         width: 100%;
+        margin-top: 100px;
     }
     #workflow .container{
+        margin-top: 100px;
         position: relative;
-        top: 1100px;
+        top: 1300px;
         z-index: 5;
     }
+   
    
     
     
     
 }
 @media only screen and (max-width: 768px) {
-    
+   
+    #projectsection{
+        margin-top: 200px;
+       
+    }
+    #workflow{
+        margin-top: 100px;
+    }
 	#footer footer {
 		flex-direction: column;
 		justify-content: center;
@@ -755,13 +770,19 @@ img{
 		width: fit-content;
 		margin: 0 auto;
 	}
+    .project .project-bottom{
+        margin-bottom: 10px;
+    }
+    #footer{
+        margin-top: 100px;
+    }
 }
 @media only screen and (max-width: 320px) {
     
-    #footer{
+    /* #footer{
         margin-top: 100px;
 
-    }
+    } */
 	#footer footer {
 		flex-direction: column;
 		justify-content: center;
@@ -780,13 +801,20 @@ img{
 		width: fit-content;
 		margin: 0 auto;
 	}
+    #testimonialsection {
+        margin-top: 350px;
+    }
+    #projectsection{
+        margin-top: 150px;
+    }
+    
 }
 @media only screen and (max-width: 375px) {
     
-    #footer{
+    /* #footer{
         margin-top: 500px;
 
-    }
+    } */
 	#footer footer {
 		flex-direction: column;
 		justify-content: center;
@@ -895,7 +923,7 @@ img{
 }
 
 /* about */
-@media only screen and (max-width:768px){
+@media only screen and (max-width:926px){
     #about .wrapper{
         flex-direction: column-reverse;
         text-align: center;
@@ -907,9 +935,12 @@ img{
         width: 100%;
         text-align: center;
     }
+    .project .project-bottom{
+        margin-bottom: 100px;
+    }
 }
 /*footer*/
-@media only screen and (max-width:768px){
+@media only screen and (min-width:368px){
     /* #footersection .footer{
         width:  200px;
     
