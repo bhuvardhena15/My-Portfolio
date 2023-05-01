@@ -176,7 +176,8 @@ html {
   text-align:center;
   margin: 0 50px;
   text-transform: capitalize;
-  font-family: cursive;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 
 }
 #mainpage  .para h1{
